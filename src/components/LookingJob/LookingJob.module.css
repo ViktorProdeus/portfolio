@@ -1,0 +1,29 @@
+.LookingJob {
+    min-height: 150px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.LookingJob strong {
+    display: block;
+    font-size: 24px;
+}
+
+.LookingJob .button {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    text-transform: none;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+}
+
+@media screen and (max-width: 768px) {
+    .LookingJob strong {
+        display: block;
+        font-size: 22px;
+    }
+}

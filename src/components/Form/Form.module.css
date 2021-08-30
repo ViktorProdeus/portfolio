@@ -1,0 +1,26 @@
+.Form {
+    min-height: 150px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Form strong {
+    display: block;
+    font-size: 1.5em;
+}
+
+.Form .button {
+    max-width: 200px;
+    width: 100%;
+    margin: 70px auto 0;
+    text-transform: none;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+}
+
+.input {
+    margin-bottom: 20px;
+}

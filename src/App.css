@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import "~normalize.css";
+
+:root {
+    --default-transition: 0.2s linear;
+    --default-background: lightgrey;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+html {
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+    width: 100%;
+    min-width: 360px;
+    height: 100%;
+
+    font-size: 16px;
+    background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+    font-size: 24px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.listReset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1074px;
+    margin: 0 auto;
+    /*border: 1px solid;*/
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.section h2 {
+    margin: 0 0 80px;
+    text-align: center;
+}
+
+.section_pink {
+    background-color: pink;
+}
+
+.section_purple {
+    background-color: purple;
+}
+
+.section_green {
+    background-color: palegreen;
+}
+
+.section_burlywood {
+    background-color: burlywood;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 50px 15px;
+    }
+
+    .section h2 {
+        margin: 0 0 50px;
+        font-size: 22px;
+    }
+
 }

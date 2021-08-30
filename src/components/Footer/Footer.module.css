@@ -1,0 +1,29 @@
+.footer {
+    padding: 20px;
+    background-color: darkseagreen;
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.footerInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerInner h2 {
+    margin: 0 0 40px;
+}
+
+.copyRight {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .copyRight {
+        font-size: 18px;
+    }
+}
