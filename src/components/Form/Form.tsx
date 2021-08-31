@@ -1,27 +1,25 @@
 import React from "react";
 import s from "./Form.module.css"
-import Button from '@material-ui/core/Button';
+import {AccentButton} from "../LookingJob/LookingJob";
 
 export const Form = () => {
 
     return (
-        <div className={s.Form}>
-            <form action="/" method="post">
-                <div className={`${s.input} name`}>
-                    <input name="name" id="name" placeholder="Имя" autoComplete="off"/>
+        <div className="container">
+            <form className={s.contactsForm} action="#" method="post">
+                <div className={`${s.formGroup} ${s.formGroup_name}`}>
+                    <input type="text" className={s.formControl} name="name" placeholder="Name" required autoComplete="off"/>
                 </div>
 
-                <div className={`${s.input} phone`}>
-                    <input name="phone" id="phone" placeholder="Телефон" autoComplete="off"/>
+                <div className={`${s.formGroup} ${s.formGroup_email}`}>
+                    <input type="email" className={s.formControl} name="email" placeholder="Email" required autoComplete="off"/>
                 </div>
 
-                <div className={"textarea"}>
-                    <textarea name="message" id="message" placeholder="Ваш вопрос" autoComplete="off"/>
+                <div className={`${s.formGroup} ${s.formGroup_message}`}>
+                    <textarea className={s.formControl} name="message" placeholder="Your Message" required autoComplete="off"/>
                 </div>
 
-                <Button type={"submit"} className={s.button} variant="contained">
-                    Отправить
-                </Button>
+                <AccentButton className={s.formButton} type="submit" name="send">Send message</AccentButton>
             </form>
         </div>
     );

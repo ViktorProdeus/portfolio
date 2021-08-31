@@ -1,26 +1,70 @@
-.Form {
-    min-height: 150px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
+.contactsForm {
+    margin-top: 20px;
+    background: url("../../assets/img/map-img.png") center center no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas:
+            "name email"
+            "message message"
+            "btn btn";
+    grid-gap: 40px 60px;
 }
 
-.Form strong {
+.formGroup {
+    position: relative;
+}
+
+.formGroup_name {
+    grid-area: name;
+}
+
+.formGroup_email {
+    grid-area: email;
+}
+
+.formGroup_message {
+    grid-area: message;
+}
+
+.formControl {
     display: block;
-    font-size: 1.5em;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #5d5c60;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 46px;
+    padding: 12px;
 }
 
-.Form .button {
+.formControl:focus {
+    border: 1px solid var(--accent-color);
+}
+
+textarea.formControl {
+    height: 120px;
+    resize: none;
+    padding-top: 18px;
+}
+
+.contactsForm .formButton {
     max-width: 200px;
     width: 100%;
-    margin: 70px auto 0;
     text-transform: none;
     font-size: 18px;
     letter-spacing: 0.08em;
+    color: white;
 }
 
-.input {
-    margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+    .contactsForm {
+        grid-template-areas:
+            "name name"
+            "email email"
+            "message message"
+            "btn btn";
+        grid-row-gap: 40px;
+    }
 }

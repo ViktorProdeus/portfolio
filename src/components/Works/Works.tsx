@@ -1,25 +1,29 @@
 import React from "react";
-import s from "./Works.module.css"
+import s from "./Works.module.css";
+import smart from "../../assets/img/smart-device.jpg"
+import fitness from "../../assets/img/supergym.jpg"
 
 export const Works = () => {
     const works: WorkPropsType[] = [
         {
-            title: "Проект",
-            description: "Краткое описание",
-            src: "https://via.placeholder.com/150X150",
-            alt: "project",
+            title: "Smart-device",
+            description: "Html, SCSS, gulp - project",
+            src: `${smart}`,
+            alt: "Smart-device",
+            link: "https://viktorprodeus.github.io/smart-device/build/",
         },
         {
-            title: "Проект",
-            description: "Краткое описание",
-            src: "https://via.placeholder.com/150X150",
-            alt: "project",
+            title: "Fitness",
+            description: "Html, SCSS, gulp - project",
+            src: `${fitness}`,
+            alt: "Fitness",
+            link: "https://viktorprodeus.github.io/fitness/build/",
         },
     ];
 
     return (
         <ul className={`${s.WorksList} listReset`}>
-            {works.map((w, index) => <Work key={index} title={w.title} description={w.description} src={w.src}
+            {works.map((w, index) => <Work key={index} title={w.title} link={w.link} description={w.description} src={w.src}
                                            alt={w.alt}/>)}
         </ul>
     );
@@ -30,6 +34,7 @@ type WorkPropsType = {
     description: string
     src: string
     alt: string
+    link: string
 }
 
 export const Work = (props: WorkPropsType) => {
@@ -39,7 +44,7 @@ export const Work = (props: WorkPropsType) => {
 
                 <img src={props.src} alt={props.alt}/>
 
-                <a href="/#" target={"_blank"} className={`button ${s.link}`}>Посмотреть</a>
+                <a href={props.link} rel="noreferrer" target={"_blank"} className={`button ${s.link}`}>Open</a>
             </div>}
 
             <h3>{props.title}</h3>

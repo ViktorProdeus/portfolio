@@ -11,11 +11,11 @@ import {Footer} from "./components/Footer/Footer";
 
 export const App = () => {
     const sections: SectionPropsType[] = [
-        {sectionClass: "section_pink", isTitleHidden: true, sectionTitle: "Промо", sectionComponent: Promo,},
-        {sectionClass: "section_green", isTitleHidden: false, sectionTitle: "Скиллы", sectionComponent: Skills,},
-        {sectionClass: "section_purple", isTitleHidden: false, sectionTitle: "Мои работы", sectionComponent: Works,},
-        {sectionClass: "section_burlywood", isTitleHidden: true, sectionTitle: "Ищу работу", sectionComponent: LookingJob,},
-        {sectionClass: "section_pink", isTitleHidden: false, sectionTitle: "Контакты", sectionComponent: Form,},
+        {sectionClass: "section_dark", isTitleHidden: true, sectionTitle: "Promo", sectionComponent: Promo,},
+        {sectionClass: "section_light", isTitleHidden: false, sectionTitle: "Skills", sectionComponent: Skills,},
+        {sectionClass: "section_dark", isTitleHidden: false, sectionTitle: "Works", sectionComponent: Works,},
+        {sectionClass: "section_light", isTitleHidden: true, sectionTitle: "Looking for a job", sectionComponent: LookingJob,},
+        {sectionClass: "section_dark", isTitleHidden: false, sectionTitle: "Contacts", sectionComponent: Form,},
     ];
 
     return (

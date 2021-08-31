@@ -1,15 +1,16 @@
 import React from "react";
 import s from "./Promo.module.css"
+import avatar from "../../assets/img/avatar.jpg"
 
 export const Promo = () => {
     return (
         <div className={s.promo}>
             <div className={s.innerDescription}>
-                <strong>Привет! <br/> Меня зовут Виктор Продеус. Я front-end разработчик</strong>
+                <strong>Hi! <br/> My name's Viktar Pradzevus. I'm front-end developer</strong>
             </div>
 
             <div className={s.innerPhoto}>
-                <img src="https://via.placeholder.com/300X400.png" width={300} height={400} alt="ava"/>
+                <img src={avatar} alt="avatar"/>
             </div>
         </div>
     );

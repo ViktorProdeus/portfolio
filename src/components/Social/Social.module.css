@@ -1,14 +1,13 @@
 .Social {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .Social .linkIcon {
     font-size: 0;
-    padding: 10px;
-    border: 2px solid #e0e0e0;
-    color: #e0e0e0;
+    padding: 5px;
+    color: var(--light-gray-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +15,5 @@
 }
 
 .Social .linkIcon:hover {
-    color: gold;
-    border-color: gold;
+    color: var(--accent-color);
 }

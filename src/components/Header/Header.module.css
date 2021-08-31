@@ -3,13 +3,14 @@
     background-color: lightskyblue;
     color: black;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.2;
+    border-bottom: 1px solid var(--light-brown-color);
 }
 
 .navigation {
     margin-left: auto;
-    max-width: 496px;
+    max-width: 310px;
 }
 
 .navigationList {
@@ -19,7 +20,7 @@
 }
 
 .navigation li {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .navigation li:last-child {
@@ -27,14 +28,18 @@
 }
 
 .navigation a {
-    color: black;
+    color: var(--light-gray-color);
     text-decoration: none;
     display: block;
     padding: 5px;
+
+    line-height: 1.2;
+    font-weight: 400;
 }
+
 .navigation .active,
 .navigation a:hover {
-    color: red;
+    color: var(--accent-color);
     transition: color var(--default-transition);
 }
 
@@ -45,7 +50,7 @@
     }
 
     .navigation {
-        max-width: 314px;
+        max-width: 258px;
     }
 
     .navigation li {

@@ -1,8 +1,15 @@
 @import "~normalize.css";
 
 :root {
+    --accent-color: #b19777;
+    --dark-color: #2c2a2f;
+    --black-color: #111111;
+    --light-gray-color: #e0e0e0;
+    --light-brown-color: #434247;
     --default-transition: 0.2s linear;
     --default-background: lightgrey;
+    --font-Montserrat: 'Montserrat', sans-serif;
+    --font-OpenSans: 'Open Sans', sans-serif;
 }
 
 *,
@@ -27,6 +34,8 @@ body {
     min-width: 360px;
     height: 100%;
 
+    font-family: var(--font-OpenSans);
+    font-weight: 400;
     font-size: 16px;
     background-color: white;
 }
@@ -62,20 +71,39 @@ input[type="radio"].visually-hidden {
     width: 100%;
     max-width: 1074px;
     margin: 0 auto;
-    /*border: 1px solid;*/
+}
+
+.Portfolio {
+    padding-top: 71px;
 }
 
 .section {
     padding: 50px 20px;
 }
 
-.section h2 {
+ h2 {
+    position: relative;
     margin: 0 0 80px;
     text-align: center;
 }
 
+ h2::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    background-color: var(--accent-color);
+}
+
 .section_pink {
     background-color: pink;
+}
+
+.section_light {
+    background-color: var(--light-gray-color);
 }
 
 .section_purple {
@@ -86,11 +114,19 @@ input[type="radio"].visually-hidden {
     background-color: palegreen;
 }
 
-.section_burlywood {
-    background-color: burlywood;
+.section_dark {
+    background-color: var(--dark-color);
+}
+
+.section_dark h2 {
+    color: var(--light-gray-color);
 }
 
 @media screen and (max-width: 768px) {
+    .Portfolio {
+        padding-top: 58px;
+    }
+
     .section {
         padding: 50px 15px;
     }

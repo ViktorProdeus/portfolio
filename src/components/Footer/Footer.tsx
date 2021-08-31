@@ -6,12 +6,12 @@ export const Footer = () => {
     return (
         <footer className={s.footer}>
             <div className={`container ${s.footerInner}`}>
-                <h2>Виктор Продеус</h2>
+                <h2>Viktar Pradzevus</h2>
 
                 <Social/>
 
                 <div className={s.copyRight}>
-                    &copy; 2021 Все права защищены
+                    &copy; 2021 All Right Reserved
                 </div>
             </div>
         </footer>
