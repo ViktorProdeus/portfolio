@@ -78,7 +78,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section {
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 
  h2 {
@@ -106,14 +106,6 @@ input[type="radio"].visually-hidden {
     background-color: var(--light-gray-color);
 }
 
-.section_purple {
-    background-color: purple;
-}
-
-.section_green {
-    background-color: palegreen;
-}
-
 .section_dark {
     background-color: var(--dark-color);
 }
@@ -125,10 +117,6 @@ input[type="radio"].visually-hidden {
 @media screen and (max-width: 768px) {
     .Portfolio {
         padding-top: 58px;
-    }
-
-    .section {
-        padding: 50px 15px;
     }
 
     .section h2 {

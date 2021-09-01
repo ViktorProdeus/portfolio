@@ -2,10 +2,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
+    align-items: stretch;
 }
 
 .SkillsItem {
-    min-height: 250px;
+    height: 100%;
     padding: 32px 20px;
     background-color: white;
     text-align: center;

@@ -9,7 +9,7 @@ gsap.registerPlugin(TextPlugin);
 
 export const Promo = () => {
 
-    let textItem: any = useRef<HTMLElement>(null);
+    let textItem: any = useRef<HTMLElement | null>(null);
 
     useEffect(() => {
         gsap.to(textItem, {
@@ -17,7 +17,7 @@ export const Promo = () => {
             duration: 6,
             delay: 1,
             ease: "none",
-        })
+        });
     }, [textItem])
 
     return (

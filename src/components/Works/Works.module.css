@@ -79,6 +79,22 @@
     font-weight: 600;
 }
 
+@media screen and (max-width: 1024px) {
+    .preview img {
+        opacity: 0.3;
+    }
+
+    .preview .link {
+        position: relative;
+    }
+
+    .link {
+        background-color: var(--accent-color);
+        color: white;
+        font-weight: 600;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .WorksList {
         grid-template-columns: minmax(300px, 360px);

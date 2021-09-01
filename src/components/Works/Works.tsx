@@ -1,7 +1,10 @@
 import React from "react";
 import s from "./Works.module.css";
-import smart from "../../assets/img/smart-device.jpg"
-import fitness from "../../assets/img/supergym.jpg"
+import smart from "../../assets/img/smart-device.jpg";
+import fitness from "../../assets/img/supergym.jpg";
+import socialNetwork from "../../assets/img/social.jpg";
+import todoList from "../../assets/img/todolist.jpg";
+import storybook from "../../assets/img/storybook.jpg";
 
 export const Works = () => {
     const works: WorkPropsType[] = [
@@ -18,6 +21,27 @@ export const Works = () => {
             src: `${fitness}`,
             alt: "Fitness",
             link: "https://viktorprodeus.github.io/fitness/build/",
+        },
+        {
+            title: "Social-Network",
+            description: "React, Redux, Typescript - project",
+            src: `${socialNetwork}`,
+            alt: "Social-Network",
+            link: "https://viktorprodeus.github.io/social-network",
+        },
+        {
+            title: "TodoList",
+            description: "React, Redux, Typescript, Material UI - project",
+            src: `${todoList}`,
+            alt: "TodoList",
+            link: "https://viktorprodeus.github.io/todolist/",
+        },
+        {
+            title: "Storybook",
+            description: "React, Redux, Typescript, Testing - project",
+            src: `${storybook}`,
+            alt: "Storybook",
+            link: "https://60d1b9ea4b2706004963b862-cphfjpplqm.chromatic.com/?path=/story/onoff-stories--on-mode&globals=measureEnabled:false",
         },
     ];
 
