@@ -46,6 +46,7 @@
 }
 
 .iconWrap svg {
+    fill: var(--accent-color);
     transform: rotate(-45deg);
 }
 

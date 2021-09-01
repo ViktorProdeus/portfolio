@@ -56,6 +56,11 @@ textarea.formControl {
     font-size: 18px;
     letter-spacing: 0.08em;
     color: white;
+    background-color: var(--accent-color);
+}
+
+.contactsForm .formButton:hover {
+    background-color: var(--accent-color);
 }
 
 @media screen and (max-width: 768px) {

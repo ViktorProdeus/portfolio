@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Form.module.css"
-import {AccentButton} from "../LookingJob/LookingJob";
+import Button from "@material-ui/core/Button";
 
 export const Form = () => {
 
@@ -19,7 +19,7 @@ export const Form = () => {
                     <textarea className={s.formControl} name="message" placeholder="Your Message" required autoComplete="off"/>
                 </div>
 
-                <AccentButton className={s.formButton} type="submit" name="send">Send message</AccentButton>
+                <Button className={s.formButton} type="submit" name="send">Send message</Button>
             </form>
         </div>
     );

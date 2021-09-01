@@ -15,7 +15,7 @@ export const Skills = () => {
 
     return (
         <ul className={`${s.SkillsList} listReset`}>
-            {skills.map((sk, index) => <Skill key={index} title={sk.title} description={sk.description} colorIcon={sk.colorIcon} iconComponent={sk.iconComponent}/>)}
+            {skills.map((sk, index) => <Skill key={index} title={sk.title} description={sk.description} iconComponent={sk.iconComponent}/>)}
         </ul>
     );
 };

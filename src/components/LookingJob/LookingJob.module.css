@@ -22,6 +22,11 @@
     font-size: 18px;
     letter-spacing: 0.08em;
     color: white;
+    background-color: var(--accent-color);
+}
+
+.LookingJob .button:hover {
+    background-color: var(--accent-color);
 }
 
 @media screen and (max-width: 768px) {
