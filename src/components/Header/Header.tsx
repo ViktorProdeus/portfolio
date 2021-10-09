@@ -1,10 +1,7 @@
 import React from "react";
 import s from "./Header.module.css";
 import {AppBar, createStyles, makeStyles, Theme} from "@material-ui/core";
-import {gsap} from "gsap";
-import {ScrollToPlugin} from "gsap/ScrollToPlugin";
-
-gsap.registerPlugin(ScrollToPlugin);
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -17,17 +14,11 @@ const useStyles = makeStyles((theme: Theme) =>
 export const Header = () => {
     const classes = useStyles();
 
-    const scrollToSection = (e: any) => {
-        e.preventDefault();
-        const target = e.target.getAttribute("href")
-        gsap.to(window, {duration: 1, scrollTo: {y: target, offsetY: 50}});
-    }
-
-    const navlinks: {id: number, href: string, title: string}[] = [
-        {id: 1, href: "#promo", title: "Main"},
-        {id: 2, href: "#skills", title: "Skills"},
-        {id: 3, href: "#works", title: "Works"},
-        {id: 4, href: "#contacts", title: "Contacts"},
+    const navlinks: {sectionID: string, title: string}[] = [
+        {sectionID: "promo", title: "Main"},
+        {sectionID: "skills", title: "Skills"},
+        {sectionID: "works", title: "Works"},
+        {sectionID: "contacts", title: "Contacts"},
     ];
 
 
@@ -35,10 +26,17 @@ export const Header = () => {
         <div className="container">
             <nav className={s.navigation}>
                 <ul className={`${s.navigationList} listReset`}>
-                    {navlinks.map(link => <li key={link.id}>
-                        <a href={link.href} rel="noreferrer" onClick={scrollToSection}>
+                    {navlinks.map((link, index) => <li key={index}>
+                        <Link
+                            activeClass={s.active}
+                            to={link.sectionID}
+                            spy={true}
+                            smooth={true}
+                            offset={-58}
+                            duration={500}
+                          >
                             {link.title}
-                        </a>
+                        </Link>
                     </li>)}
                 </ul>
             </nav>
