@@ -1,38 +1,116 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import s from "./Promo.module.css"
 import avatar from "../../assets/img/avatar.jpg"
-import {gsap} from "gsap";
-import {TextPlugin} from "gsap/TextPlugin";
-
-gsap.registerPlugin(TextPlugin);
+import Particles from "react-tsparticles";
+import { Fade } from 'react-awesome-reveal'
+import { ISourceOptions } from "tsparticles";
+import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 
 export const Promo = () => {
-
-    let textItem: any = useRef<HTMLElement | null>(null);
-
-    useEffect(() => {
-        gsap.to(textItem, {
-            text: {value: "Hello! My name's Viktar Pradzevus. I'm front-end developer"},
-            duration: 6,
-            delay: 1,
-            ease: "none",
-        });
-    }, [textItem])
+    const options = {
+        fpsLimit: 90,
+        interactivity: {
+            detectsOn: "canvas",
+            events: {
+                onClick: {
+                    enable: true,
+                    mode: "push",
+                },
+                onHover: {
+                    enable: true,
+                    mode: "repulse",
+                },
+                resize: true,
+            },
+            modes: {
+                bubble: {
+                    distance: 400,
+                    duration: 2,
+                    opacity: 0.8,
+                    size: 40,
+                },
+                push: {
+                    quantity: 4,
+                },
+                repulse: {
+                    distance: 200,
+                    duration: 0.4,
+                },
+            },
+        },
+        particles: {
+            color: {
+                value: "#ffffff",
+            },
+            links: {
+                color: "#ffffff",
+                distance: 150,
+                enable: true,
+                opacity: 0.3,
+                width: 1,
+            },
+            collisions: {
+                enable: true,
+            },
+            move: {
+                direction: "none",
+                enable: true,
+                outMode: "bounce",
+                random: false,
+                speed: 2,
+                straight: false,
+            },
+            number: {
+                density: {
+                    enable: true,
+                    value_area: 800,
+                },
+                value: 80,
+            },
+            opacity: {
+                value: 0.3,
+            },
+            shape: {
+                type: "star",
+            },
+            size: {
+                random: false,
+                value: 3,
+            },
+        },
+        detectRetina: true,
+    } as ISourceOptions
 
     return (
-        <div className={s.promo}>
-            <div className={s.innerDescription}>
-                <strong
-                    ref={(el) => {
-                        textItem = el
-                    }}
-                />
-            </div>
+        <>
+            <Particles
+                className={s.particles}
+                options={options}
+            />
 
-            <div className={s.innerPhoto}>
-                <img src={avatar} alt="avatar"/>
+            <div className={s.promo}>
+
+                <div className={s.innerDescription}>
+                    <Typewriter
+                        options={{
+                            strings: ["Hello!", "My name's Viktar Pradzevus", "I'm front-end developer"],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </div>
+
+                <Fade className={s.fadeWrapper} duration={3500}>
+                    <Tilt>
+                        <div className={s.innerPhoto}>
+                            <img src={avatar} alt="avatar" />
+                        </div>
+                    </Tilt>
+                </Fade>
             </div>
-        </div>
+        </>
+
     );
 };

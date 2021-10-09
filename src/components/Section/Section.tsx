@@ -1,4 +1,5 @@
-import React, {FC} from "react";
+import React, { FC } from "react";
+import { Fade } from 'react-awesome-reveal'
 
 export type SectionPropsType = {
     id: string
@@ -12,10 +13,11 @@ export const Section = (props: SectionPropsType) => {
         <section id={props.id} className={`section ${props.sectionClass}`}>
             <div className="container">
                 {props.isTitleHidden ?
-                    <h2 className="visually-hidden">{props.sectionTitle}</h2> : <h2>{props.sectionTitle}</h2>
+                    <h2 className="visually-hidden">{props.sectionTitle}</h2> :
+                    <Fade delay={200}><h2>{props.sectionTitle}</h2></Fade>
                 }
 
-                {<props.sectionComponent/>}
+                {<props.sectionComponent />}
             </div>
         </section>
     );

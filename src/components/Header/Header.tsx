@@ -36,9 +36,7 @@ export const Header = () => {
             <nav className={s.navigation}>
                 <ul className={`${s.navigationList} listReset`}>
                     {navlinks.map(link => <li key={link.id}>
-                        <a href={link.href} rel="noreferrer" onClick={
-                            scrollToSection
-                        }>
+                        <a href={link.href} rel="noreferrer" onClick={scrollToSection}>
                             {link.title}
                         </a>
                     </li>)}

@@ -5,6 +5,8 @@ import fitness from "../../assets/img/supergym.jpg";
 import socialNetwork from "../../assets/img/social.jpg";
 import todoList from "../../assets/img/todolist.jpg";
 import storybook from "../../assets/img/storybook.jpg";
+import learningCards from "../../assets/img/learning-cards.jpg";
+import { Fade } from "react-awesome-reveal";
 
 export const Works = () => {
     const works: WorkPropsType[] = [
@@ -43,12 +45,19 @@ export const Works = () => {
             alt: "Storybook",
             link: "https://60d1b9ea4b2706004963b862-cphfjpplqm.chromatic.com/?path=/story/onoff-stories--on-mode&globals=measureEnabled:false",
         },
+        {
+            title: "Cards Project",
+            description: "React, Redux, Typescript - project",
+            src: `${learningCards}`,
+            alt: "learning-cards",
+            link: "https://humai88.github.io/friday/#/login",
+        },
     ];
 
     return (
         <ul className={`${s.WorksList} listReset`}>
-            {works.map((w, index) => <Work key={index} title={w.title} link={w.link} description={w.description} src={w.src}
-                                           alt={w.alt}/>)}
+            {works.map((w, index) => <Fade key={index} delay={200}><Work title={w.title} link={w.link} description={w.description} src={w.src}
+                                           alt={w.alt}/></Fade>)}
         </ul>
     );
 };

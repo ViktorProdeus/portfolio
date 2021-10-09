@@ -11,8 +11,9 @@ import {
     SiTypescript,
     TiHtml5
 } from "react-icons/all";
-import {IconType} from "react-icons/lib";
-import {Card} from "@material-ui/core";
+import { IconType } from "react-icons/lib";
+import { Card } from "@material-ui/core";
+import { Fade } from 'react-awesome-reveal';
 
 export const Skills = () => {
     const skills: SkillPropsType[] = [
@@ -30,7 +31,7 @@ export const Skills = () => {
     return (
         <ul className={`${s.SkillsList} listReset`}>
             {skills.map((sk, index) => <Skill key={index} title={sk.title} description={sk.description}
-                                              iconComponent={sk.iconComponent}/>)}
+                                              iconComponent={sk.iconComponent} />)}
         </ul>
     );
 };
@@ -46,13 +47,16 @@ type SkillPropsType = {
 export const Skill = (props: SkillPropsType) => {
     return (
         <li>
-            <Card className={s.SkillsItem}>
-                <div className={s.iconWrap}>
-                    {<props.iconComponent size={"3em"} color={props.colorIcon}/>}
-                </div>
-                <h3>{props.title}</h3>
-                <p>{props.description}</p>
-            </Card>
+            <Fade delay={200}>
+                <Card className={s.SkillsItem}>
+                    <div className={s.iconWrap}>
+                        {<props.iconComponent size={"3em"} color={props.colorIcon} />}
+                    </div>
+
+                    <h3>{props.title}</h3>
+                    <p>{props.description}</p>
+                </Card>
+            </Fade>
         </li>
     );
 };
