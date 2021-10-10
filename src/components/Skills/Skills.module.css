@@ -5,6 +5,10 @@
     align-items: stretch;
 }
 
+.SkillsList li > div {
+    height: 100%;
+}
+
 .SkillsItem {
     height: 100%;
     padding: 32px 20px;

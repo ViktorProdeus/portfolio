@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Header.module.css";
-import {AppBar, createStyles, makeStyles, Theme} from "@material-ui/core";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { AppBar, createStyles, makeStyles, Theme } from "@material-ui/core";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

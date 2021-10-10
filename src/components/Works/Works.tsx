@@ -56,7 +56,7 @@ export const Works = () => {
 
     return (
         <ul className={`${s.WorksList} listReset`}>
-            {works.map((w, index) => <Fade key={index} delay={200}><Work title={w.title} link={w.link} description={w.description} src={w.src}
+            {works.map((w, index) => <Fade cascade={true} key={index} delay={200}><Work title={w.title} link={w.link} description={w.description} src={w.src}
                                            alt={w.alt}/></Fade>)}
         </ul>
     );

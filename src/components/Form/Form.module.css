@@ -50,6 +50,7 @@ textarea.formControl {
 }
 
 .contactsForm .formButton {
+    margin-bottom: 20px;
     max-width: 200px;
     width: 100%;
     text-transform: none;
@@ -59,8 +60,14 @@ textarea.formControl {
     background-color: var(--accent-color);
 }
 
-.contactsForm .formButton:hover {
+.contactsForm .formButton:hover,
+.contactsForm .formButton:hover.formButton:disabled {
     background-color: var(--accent-color);
+}
+
+.alert {
+    position: absolute;
+    width: calc(100%);
 }
 
 @media screen and (max-width: 768px) {
