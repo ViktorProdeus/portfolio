@@ -22,7 +22,7 @@ export const Form = () => {
             }));
     };
 
-    {status !== null && (timer = setTimeout(()=> setStatus(null),4000))}
+    status !== null && (timer = setTimeout(()=> setStatus(null),4000))
 
     const alertHandler = () => {
         clearTimeout(timer)

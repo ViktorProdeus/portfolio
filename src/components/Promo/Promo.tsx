@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Promo.module.css"
-import avatar from "../../assets/img/avatar.jpg"
+import avatar from "../../assets/img/avatar2.jpg"
 import Particles from "react-tsparticles";
 import { Fade } from 'react-awesome-reveal'
 import { ISourceOptions } from "tsparticles";

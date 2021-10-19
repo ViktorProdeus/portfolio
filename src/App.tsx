@@ -8,6 +8,7 @@ import {Works} from "./components/Works/Works";
 import {LookingJob} from "./components/LookingJob/LookingJob";
 import {Form} from "./components/Form/Form";
 import {Footer} from "./components/Footer/Footer";
+import DocumentTitle from 'react-document-title';
 
 export const App = () => {
     const sections: SectionPropsType[] = [
@@ -19,21 +20,25 @@ export const App = () => {
     ];
 
     return (
-        <div className="Portfolio">
-            <h1 className="visually-hidden">Портфолио</h1>
+        <>
+            <DocumentTitle title='Portfolio - Viktar Pradzevus' />
+            <div className="Portfolio">
+                <h1 className="visually-hidden">Портфолио</h1>
 
-            <Header/>
-            {
-                sections.map((s) => <Section
-                    id={s.id}
-                    key={s.id}
-                    sectionClass={s.sectionClass}
-                    isTitleHidden={s.isTitleHidden}
-                    sectionTitle={s.sectionTitle}
-                    sectionComponent={s.sectionComponent}/>)
-            }
-            <Footer/>
-        </div>
+                <Header/>
+                {
+                    sections.map((s) => <Section
+                        id={s.id}
+                        key={s.id}
+                        sectionClass={s.sectionClass}
+                        isTitleHidden={s.isTitleHidden}
+                        sectionTitle={s.sectionTitle}
+                        sectionComponent={s.sectionComponent}/>)
+                }
+                <Footer/>
+            </div>
+        </>
+
     );
 }
 

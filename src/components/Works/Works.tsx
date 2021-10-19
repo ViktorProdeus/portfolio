@@ -6,6 +6,8 @@ import socialNetwork from "../../assets/img/social.jpg";
 import todoList from "../../assets/img/todolist.jpg";
 import storybook from "../../assets/img/storybook.jpg";
 import learningCards from "../../assets/img/learning-cards.jpg";
+import films from "../../assets/img/films.jpg";
+import counter from "../../assets/img/counter.jpg";
 import { Fade } from "react-awesome-reveal";
 
 export const Works = () => {
@@ -51,6 +53,20 @@ export const Works = () => {
             src: `${learningCards}`,
             alt: "learning-cards",
             link: "https://humai88.github.io/friday/#/login",
+        },
+        {
+            title: "Films Project",
+            description: "React, Redux, Typescript - project",
+            src: `${films}`,
+            alt: "films",
+            link: "https://viktorprodeus.github.io/nativejs_advanced/",
+        },
+        {
+            title: "Counter Project",
+            description: "React, Redux, Typescript - project",
+            src: `${counter}`,
+            alt: "counter",
+            link: "https://viktorprodeus.github.io/counter/",
         },
     ];
 
