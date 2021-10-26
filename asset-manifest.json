@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6c6850a3.chunk.css",
-    "main.js": "/portfolio/static/js/main.952445f2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.952445f2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.6a1c0338.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6a1c0338.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.080ec170.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.080ec170.js.map",
     "static/css/2.679831fc.chunk.css": "/portfolio/static/css/2.679831fc.chunk.css",
@@ -19,7 +19,7 @@
     "static/media/learning-cards.cb30c4a2.jpg": "/portfolio/static/media/learning-cards.cb30c4a2.jpg",
     "static/media/Form.module.css": "/portfolio/static/media/map-img.2ef64117.png",
     "static/media/smart-device.cee22c3c.jpg": "/portfolio/static/media/smart-device.cee22c3c.jpg",
-    "static/media/social.cafe79a4.jpg": "/portfolio/static/media/social.cafe79a4.jpg",
+    "static/media/social.22e22d82.jpg": "/portfolio/static/media/social.22e22d82.jpg",
     "static/media/storybook.5ea5874e.jpg": "/portfolio/static/media/storybook.5ea5874e.jpg",
     "static/media/supergym.b709e3bf.jpg": "/portfolio/static/media/supergym.b709e3bf.jpg",
     "static/media/todolist.a524312f.jpg": "/portfolio/static/media/todolist.a524312f.jpg"
@@ -29,6 +29,6 @@
     "static/css/2.679831fc.chunk.css",
     "static/js/2.c678c203.chunk.js",
     "static/css/main.6c6850a3.chunk.css",
-    "static/js/main.952445f2.chunk.js"
+    "static/js/main.6a1c0338.chunk.js"
   ]
 }
