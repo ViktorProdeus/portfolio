@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6c6850a3.chunk.css",
-    "main.js": "/portfolio/static/js/main.81c111e5.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.81c111e5.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.080ec170.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.080ec170.js.map",
+    "main.js": "/portfolio/static/js/main.cf2c0e1f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.cf2c0e1f.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.92a91a6b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.92a91a6b.js.map",
     "static/css/2.679831fc.chunk.css": "/portfolio/static/css/2.679831fc.chunk.css",
-    "static/js/2.c678c203.chunk.js": "/portfolio/static/js/2.c678c203.chunk.js",
-    "static/js/2.c678c203.chunk.js.map": "/portfolio/static/js/2.c678c203.chunk.js.map",
-    "static/js/3.7f9ba4a7.chunk.js": "/portfolio/static/js/3.7f9ba4a7.chunk.js",
-    "static/js/3.7f9ba4a7.chunk.js.map": "/portfolio/static/js/3.7f9ba4a7.chunk.js.map",
+    "static/js/2.540b7cad.chunk.js": "/portfolio/static/js/2.540b7cad.chunk.js",
+    "static/js/2.540b7cad.chunk.js.map": "/portfolio/static/js/2.540b7cad.chunk.js.map",
+    "static/js/3.19cd3420.chunk.js": "/portfolio/static/js/3.19cd3420.chunk.js",
+    "static/js/3.19cd3420.chunk.js.map": "/portfolio/static/js/3.19cd3420.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.679831fc.chunk.css.map": "/portfolio/static/css/2.679831fc.chunk.css.map",
     "static/css/main.6c6850a3.chunk.css.map": "/portfolio/static/css/main.6c6850a3.chunk.css.map",
-    "static/js/2.c678c203.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c678c203.chunk.js.LICENSE.txt",
+    "static/js/2.540b7cad.chunk.js.LICENSE.txt": "/portfolio/static/js/2.540b7cad.chunk.js.LICENSE.txt",
     "static/media/avatar2.55d7b13e.jpg": "/portfolio/static/media/avatar2.55d7b13e.jpg",
     "static/media/counter.5eb224ad.jpg": "/portfolio/static/media/counter.5eb224ad.jpg",
     "static/media/films.24046016.jpg": "/portfolio/static/media/films.24046016.jpg",
@@ -26,10 +26,10 @@
     "static/media/todolist.a524312f.jpg": "/portfolio/static/media/todolist.a524312f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.080ec170.js",
+    "static/js/runtime-main.92a91a6b.js",
     "static/css/2.679831fc.chunk.css",
-    "static/js/2.c678c203.chunk.js",
+    "static/js/2.540b7cad.chunk.js",
     "static/css/main.6c6850a3.chunk.css",
-    "static/js/main.81c111e5.chunk.js"
+    "static/js/main.cf2c0e1f.chunk.js"
   ]
 }
