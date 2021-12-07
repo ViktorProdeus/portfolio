@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6c6850a3.chunk.css",
-    "main.js": "/portfolio/static/js/main.cf2c0e1f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.cf2c0e1f.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a77c2a62.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a77c2a62.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.92a91a6b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.92a91a6b.js.map",
     "static/css/2.679831fc.chunk.css": "/portfolio/static/css/2.679831fc.chunk.css",
@@ -17,6 +17,7 @@
     "static/media/avatar2.55d7b13e.jpg": "/portfolio/static/media/avatar2.55d7b13e.jpg",
     "static/media/counter.5eb224ad.jpg": "/portfolio/static/media/counter.5eb224ad.jpg",
     "static/media/films.24046016.jpg": "/portfolio/static/media/films.24046016.jpg",
+    "static/media/forecast.75b1b8a8.jpg": "/portfolio/static/media/forecast.75b1b8a8.jpg",
     "static/media/learning-cards.cb30c4a2.jpg": "/portfolio/static/media/learning-cards.cb30c4a2.jpg",
     "static/media/Form.module.css": "/portfolio/static/media/map-img.2ef64117.png",
     "static/media/smart-device.cee22c3c.jpg": "/portfolio/static/media/smart-device.cee22c3c.jpg",
@@ -30,6 +31,6 @@
     "static/css/2.679831fc.chunk.css",
     "static/js/2.540b7cad.chunk.js",
     "static/css/main.6c6850a3.chunk.css",
-    "static/js/main.cf2c0e1f.chunk.js"
+    "static/js/main.a77c2a62.chunk.js"
   ]
 }
