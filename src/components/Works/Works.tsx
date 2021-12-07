@@ -8,6 +8,7 @@ import storybook from "../../assets/img/storybook.jpg";
 import learningCards from "../../assets/img/learning-cards.jpg";
 import films from "../../assets/img/films.jpg";
 import counter from "../../assets/img/counter.jpg";
+import forecast from "../../assets/img/forecast.jpg";
 import { Fade } from "react-awesome-reveal";
 
 export const Works = () => {
@@ -52,7 +53,7 @@ export const Works = () => {
             description: "React, Redux, Typescript - project",
             src: `${learningCards}`,
             alt: "learning-cards",
-            link: "https://humai88.github.io/friday/#/login",
+            link: "https://humai88.github.io/friday",
         },
         {
             title: "Films Project",
@@ -67,6 +68,13 @@ export const Works = () => {
             src: `${counter}`,
             alt: "counter",
             link: "https://viktorprodeus.github.io/counter/",
+        },
+        {
+            title: "Forecast weather Project",
+            description: "React, Redux - project",
+            src: `${forecast}`,
+            alt: "forecast",
+            link: "https://viktorprodeus.github.io/weather-app/",
         },
     ];
 
