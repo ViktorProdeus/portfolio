@@ -79,6 +79,19 @@
     font-weight: 600;
 }
 
+.code {
+    display: inline-flex;
+    padding: 0 15px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: all var(--default-transition);
+}
+
+.code:hover {
+    opacity: var(--default-opacity);
+}
+
 @media screen and (max-width: 1024px) {
     .preview img {
         opacity: 0.3;

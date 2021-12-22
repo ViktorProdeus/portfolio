@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Clone-github  Project",
+    "description": "React, Redux, Typescript - project",
+    "alt": "clone-github",
+    "link": "https://clone-github-tau.vercel.app",
+    "code_url": "https://github.com/ViktorProdeus/clone-github"
+  },
+  {
+    "title": "Forecast weather Project",
+    "description": "React, Redux - project",
+    "alt": "forecast",
+    "link": "https://viktorprodeus.github.io/weather-app",
+    "code_url": "https://github.com/ViktorProdeus/weather-app"
+  },
+  {
+    "title": "Smart-device",
+    "description": "Html, SCSS, gulp - project",
+    "alt": "Smart-device",
+    "link": "https://viktorprodeus.github.io/smart-device/build/",
+    "code_url": "https://github.com/ViktorProdeus/smart-device"
+  },
+  {
+    "title": "Fitness",
+    "description": "Html, SCSS, gulp - project",
+    "alt": "Fitness",
+    "link": "https://viktorprodeus.github.io/fitness/build/",
+    "code_url": "https://github.com/ViktorProdeus/fitness"
+  },
+  {
+    "title": "Social-Network",
+    "description": "React, Redux, Typescript - project",
+    "alt": "Social-Network",
+    "link": "https://viktorprodeus.github.io/social-network",
+    "code_url": "https://github.com/ViktorProdeus/social-network"
+  },
+  {
+    "title": "TodoList",
+    "description": "React, Redux, Typescript, Material UI - project",
+    "alt": "TodoList",
+    "link": "https://viktorprodeus.github.io/todolist/",
+    "code_url": "https://github.com/ViktorProdeus/todolist"
+  },
+  {
+    "title": "Storybook",
+    "description": "React, Redux, Typescript, Testing - project",
+    "alt": "Storybook",
+    "link": "https://60d1b9ea4b2706004963b862-cphfjpplqm.chromatic.com/?path=/story/onoff-stories--on-mode&globals=measureEnabled:false",
+    "code_url": "https://github.com/ViktorProdeus/storybook"
+  },
+  {
+    "title": "Cards Project",
+    "description": "React, Redux, Typescript - project",
+    "alt": "learning-cards",
+    "link": "https://humai88.github.io/friday",
+    "code_url": "https://github.com/humai88/friday"
+  },
+  {
+    "title": "Films Project",
+    "description": "React, Redux, Typescript - project",
+    "alt": "films",
+    "link": "https://viktorprodeus.github.io/nativejs_advanced",
+    "code_url": "https://github.com/ViktorProdeus/nativejs_advanced"
+  },
+  {
+    "title": "Counter Project",
+    "description": "React, Redux, Typescript - project",
+    "alt": "counter",
+    "link": "https://viktorprodeus.github.io/counter",
+    "code_url": "https://github.com/ViktorProdeus/counter"
+  }
+]

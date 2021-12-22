@@ -9,79 +9,25 @@ import learningCards from "../../assets/img/learning-cards.jpg";
 import films from "../../assets/img/films.jpg";
 import counter from "../../assets/img/counter.jpg";
 import forecast from "../../assets/img/forecast.jpg";
+import cloneGithub from "../../assets/img/clone-github.jpg";
 import { Fade } from "react-awesome-reveal";
+import works from "../../data.json";
 
 export const Works = () => {
-    const works: WorkPropsType[] = [
-        {
-            title: "Smart-device",
-            description: "Html, SCSS, gulp - project",
-            src: `${smart}`,
-            alt: "Smart-device",
-            link: "https://viktorprodeus.github.io/smart-device/build/",
-        },
-        {
-            title: "Fitness",
-            description: "Html, SCSS, gulp - project",
-            src: `${fitness}`,
-            alt: "Fitness",
-            link: "https://viktorprodeus.github.io/fitness/build/",
-        },
-        {
-            title: "Social-Network",
-            description: "React, Redux, Typescript - project",
-            src: `${socialNetwork}`,
-            alt: "Social-Network",
-            link: "https://viktorprodeus.github.io/social-network",
-        },
-        {
-            title: "TodoList",
-            description: "React, Redux, Typescript, Material UI - project",
-            src: `${todoList}`,
-            alt: "TodoList",
-            link: "https://viktorprodeus.github.io/todolist/",
-        },
-        {
-            title: "Storybook",
-            description: "React, Redux, Typescript, Testing - project",
-            src: `${storybook}`,
-            alt: "Storybook",
-            link: "https://60d1b9ea4b2706004963b862-cphfjpplqm.chromatic.com/?path=/story/onoff-stories--on-mode&globals=measureEnabled:false",
-        },
-        {
-            title: "Cards Project",
-            description: "React, Redux, Typescript - project",
-            src: `${learningCards}`,
-            alt: "learning-cards",
-            link: "https://humai88.github.io/friday",
-        },
-        {
-            title: "Films Project",
-            description: "React, Redux, Typescript - project",
-            src: `${films}`,
-            alt: "films",
-            link: "https://viktorprodeus.github.io/nativejs_advanced/",
-        },
-        {
-            title: "Counter Project",
-            description: "React, Redux, Typescript - project",
-            src: `${counter}`,
-            alt: "counter",
-            link: "https://viktorprodeus.github.io/counter/",
-        },
-        {
-            title: "Forecast weather Project",
-            description: "React, Redux - project",
-            src: `${forecast}`,
-            alt: "forecast",
-            link: "https://viktorprodeus.github.io/weather-app/",
-        },
-    ];
+    const images = [cloneGithub, forecast, smart, fitness, socialNetwork, todoList, storybook, learningCards, films, counter];
 
     return (
         <ul className={`${s.WorksList} listReset`}>
-            {works.map((w, index) => <Fade cascade={true} key={index} delay={200}><Work title={w.title} link={w.link} description={w.description} src={w.src}
-                                           alt={w.alt}/></Fade>)}
+            {
+                works.map((w, index) =>
+                    (<Fade cascade={true} key={index} delay={200}>
+                        <Work title={w.title} link={w.link}
+                              description={w.description}
+                              src={images[index]}
+                              url={w.code_url}
+                              alt={w.alt} />
+                    </Fade>))
+            }
         </ul>
     );
 };
@@ -92,20 +38,21 @@ type WorkPropsType = {
     src: string
     alt: string
     link: string
+    url: string
 }
 
 export const Work = (props: WorkPropsType) => {
     return (
         <li className={s.WorksItem}>
-            {<div className={s.preview}>
-
-                <img src={props.src} alt={props.alt}/>
+            <div className={s.preview}>
+                <img src={props.src} alt={props.alt} />
 
                 <a href={props.link} rel="noreferrer" target={"_blank"} className={`button ${s.link}`}>Open</a>
-            </div>}
+            </div>
 
             <h3>{props.title}</h3>
             <p>{props.description}</p>
+            <a className={s.code} href={props.url} rel="noreferrer" target={"_blank"}>source code</a>
         </li>
     );
 };
